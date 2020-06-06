@@ -13,7 +13,7 @@ Also contains these functioning binaries:
 - [FastANI v1.3](https://github.com/ParBLiSS/FastANI)
 - [CoverM v0.4.0](https://github.com/wwood/CoverM)
 
-[Image at Sylabs](https://cloud.sylabs.io/library/slhogle/base/instrain)\
+[Image at Sylabs](https://cloud.sylabs.io/library/slhogle/base/instrain)
 
 Download with:\
 ```singularity pull library://slhogle/base/instrain```
@@ -33,9 +33,9 @@ Built with:
 - GNU C/C++ compiler v9.3.0
 
 Target: x86_64 Linux 5.3.0-7642-generic\
-SIMD extension: AVX2\
+SIMD extension: AVX2
 
-[Image at Sylabs](https://cloud.sylabs.io/library/slhogle/base/octopus)\
+[Image at Sylabs](https://cloud.sylabs.io/library/slhogle/base/octopus)
 
 Download with:\
 ```singularity pull library://slhogle/base/octopus```
