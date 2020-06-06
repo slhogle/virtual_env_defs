@@ -17,11 +17,12 @@ From: ubuntu:20.04
     ### install patchelf
     cd /usr/local/src/
     wget --no-check-certificate https://nixos.org/releases/patchelf/patchelf-0.10/patchelf-0.10.tar.gz
-    tar xzvf patchelf-0.10.tar.gz && cd patchelf-0.10
+    tar -xf patchelf-0.10.tar.gz && cd patchelf-0.10
     ./configure --disable-dependency-tracking --disable-silent-rules CXXFLAGS="-static-libgcc -static-libstdc++"
     make
     make install
-
+    cd /usr/local/src/ && rm patchelf-0.10.tar.gz
+    
     ### install openssl 1.1.1
     ### see here: https://cloudwafer.com/blog/installing-openssl-on-ubuntu-16-04-18-04/
     cd /usr/local/src/
@@ -85,8 +86,8 @@ From: ubuntu:20.04
     make install
     cd /usr/local/src/ && rm cmake-3.17.3.tar.gz
 
-    ### These are all things you need to install htslib plus some other required packages
-    ### important to do this after installing custom openssl
+    ### These are all things you need to install htslib plus some other required packages for octopus
+    ### important to do this after installing custom openssl above
     apt-get install -y libgmp-dev libisl-dev libmpfr-dev libmpc-dev zlib1g-dev binutils autoconf liblzma-dev libssl-dev
 
     ### install htslib
@@ -119,7 +120,7 @@ From: ubuntu:20.04
     cd octopus
     scripts/install.py --threads 4 --clean --prefix /usr/local/bin
 
-	### install octopus script dependencies
+    ### install octopus script dependencies
     cd /usr/local/src/
     # pysam needs to reference htslib
     export HTSLIB_LIBRARY_DIR=/usr/local/lib
@@ -136,7 +137,8 @@ From: ubuntu:20.04
 
 %environment
     export LC_ALL=C
-
+    PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/ssl/bin
+    
 %runscript
     exec "$@"
 
