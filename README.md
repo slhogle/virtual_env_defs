@@ -43,13 +43,13 @@ Download with:\
 ## Torstyverse
 Bundle of useful packages from [Torsten Seeman](https://github.com/tseemann)
 
-[sampclip v0.4.0](https://github.com/tseemann/samclip)
-[any2fasta v0.4.2](https://github.com/tseemann/any2fasta)
-[barrnap v0.9](https://github.com/tseemann/barrnap)
-[prokka v1.14.6](https://github.com/tseemann/prokka)
-[shovill v1.1.0](https://github.com/tseemann/shovill)
-[abricate v1.0.1](https://github.com/tseemann/abricate)
-[snippy v4.6.0](https://github.com/tseemann/snippy)
+- [sampclip v0.4.0](https://github.com/tseemann/samclip)
+- [any2fasta v0.4.2](https://github.com/tseemann/any2fasta)
+- [barrnap v0.9](https://github.com/tseemann/barrnap)
+- [prokka v1.14.6](https://github.com/tseemann/prokka)
+- [shovill v1.1.0](https://github.com/tseemann/shovill)
+- [abricate v1.0.1](https://github.com/tseemann/abricate)
+- [snippy v4.6.0](https://github.com/tseemann/snippy)
 
 [Image at Sylabs](https://cloud.sylabs.io/library/slhogle/base/torstyverse)
 
