@@ -50,14 +50,6 @@ From: ubuntu:20.04
     pip3 install matplotlib
     pip3 install checkm-genome
 
-    ### get database
-    mkdir ~/.checkm
-    cd ~/.checkm
-    wget --no-check-certificate https://data.ace.uq.edu.au/public/CheckM_databases/checkm_data_2015_01_16.tar.gz
-    tar xf checkm_data_2015_01_16.tar.gz
-    rm checkm_data_2015_01_16.tar.gz
-    checkm data setRoot ~/.checkm
-
 %environment
     export LC_ALL=C
     export HTSLIB_LIBRARY_DIR=/usr/local/lib
@@ -67,10 +59,6 @@ From: ubuntu:20.04
     exec "$@"
 
 %test
-    #openssl version -a
-    #cmake --version
-    #gcc --version
-    #g++ --version
 
 %labels
     Author SLHogle
